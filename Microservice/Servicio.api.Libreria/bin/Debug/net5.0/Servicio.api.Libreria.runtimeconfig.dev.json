@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\cumba\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\cumba\\.nuget\\packages"
+    ]
+  }
+}
