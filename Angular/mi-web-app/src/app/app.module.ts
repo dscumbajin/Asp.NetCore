@@ -7,20 +7,25 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './component/user/user.component';
 import { LibrosComponent } from './component/libros/libros.component';
 import { LibroComponent } from './component/libro/libro.component';
+import { LibrosService } from './services/libros.service';
+import { InicioComponent } from './component/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     LibrosComponent,
-    LibroComponent
+    LibroComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    LibrosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

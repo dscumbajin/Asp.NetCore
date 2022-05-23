@@ -1,1 +1,9 @@
-<app-libro *ngFor="let libro of libros" [tituloLibro]="libro"></app-libro>
+<h1>Mis Libros Favoritos</h1>
+<form (ngSubmit)="guardarLibro(f)" #f="ngForm">
+
+  <input type="text" name="nombreLibro" ngModel required>
+  <button type="submit"> Agrgar Libro</button>
+
+</form>
+
+<app-libro (libroClicked)="eliminarLibro(libro)" *ngFor="let libro of libros" [tituloLibro]="libro"></app-libro>
